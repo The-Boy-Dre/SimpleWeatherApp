@@ -1,0 +1,3 @@
+
+- Using 'display: flex' is okay for alligning general ojects on the page but to have better conrol
+- it's best to use CSS grid internally.

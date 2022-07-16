@@ -3,49 +3,82 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: center; /*This is responsible for the app's container being in the center of the screen*/
   align-items: center;   /* puts content in the middle of the page */
+  flex-direction: column;
   /* background: linear-gradient(rgb(216, 41, 41), rgb(235, 177, 70)); */
-  background: linear-gradient(rgb(235, 177, 70), rgb(41, 131, 216), rgb(41, 131, 216));   /* Add more gradients to decide the quantities of color */
   font-family: 'Roboto', sans-serif;
   color: antiquewhite;
 }
 
-.location, .temperature {
+.container {
+  width: 800px;
+  height: 600px;
+  display: grid;
+  
+  /* border: 6px solid rgba(207, 199, 199, 0.329); */
+  padding: 15px;
+  border-radius: 2rem;
+  box-shadow: 5px 7px 4px 4px rgba(0, 0, 0, 0.329);
+  background: linear-gradient(rgb(235, 177, 70), rgb(41, 131, 216), rgb(41, 131, 216));   /* Add more gradients to decide the quantities of color */
+}
+
+
+.location {
   height: 30vh;
-  width: 50%;
   display: flex;
   align-items: center;
 }
 
-.weather-icon-img {
-  margin-left: 200px;
+.location-city {
+  font-size: 40px;
+  margin-right: 150px;
+  margin-top: 5px
 }
 
-.temperature {
-  flex-direction: column;
+.datetime {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 250px;
+}
+
+.weather-icon-img {
+  margin-bottom: 450px;
+  margin-right: 10px;
+  font-weight:normal;
+}
+
+
+.temperature-description {
+  /* flex-direction: column; */
+  margin-left: 100px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .degree-section {
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 450px;
 }
 
 .temperatureSymbol {
-  margin: 10px;
-  font-size: 30px;
+  font-size: 40px;
+  margin-left: 5px;
+  font-size: 25px;
+  margin-bottom: 25px;
+  font-weight: bold;
 }
 
 .temperature-degree{
-  font-size: 40px;
+  font-size: 60px;
+  margin-left: 10px;
 }
 
 
